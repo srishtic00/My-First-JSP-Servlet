@@ -34,9 +34,10 @@ public class LoginServlet extends HttpServlet{
 
 		if (isValidUser) {
 //			request.setAttribute("name", name);
-			//If we attach these variables with request They would not work because the page is redirected to 'todo.do' 
+			//If we attach these variables with request They would not work because the page is redirected to another servlet 
 //			request.setAttribute("todos", todoService.retrieveTodos());
 //			request.getRequestDispatcher("/WEB-INF/views/Welcome.jsp").forward(request, response);
+			request.getSession().setAttribute("name",name);
 			response.sendRedirect("/todo.do");
 		} else {
 			request.setAttribute("errorMessage", "Invalid Credentials!!");
