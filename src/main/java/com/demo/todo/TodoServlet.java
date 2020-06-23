@@ -29,7 +29,9 @@ public class TodoServlet extends HttpServlet {
 		} else {
 			todoService.addTodo(todo);
 		}
-		request.setAttribute("todos", todoService.retrieveTodos());
-		request.getRequestDispatcher("/WEB-INF/views/todo.jsp").forward(request, response);
+//		request.setAttribute("todos", todoService.retrieveTodos());
+//		request.getRequestDispatcher("/WEB-INF/views/todo.jsp").forward(request, response);
+		//On reloading the page all the content gets rerendered and the todo is again and again added to the list therefore we prefer to redirect to the servlet 
+		response.sendRedirect("/todo.do");
 	}
 }
