@@ -39,7 +39,7 @@ padding: 0 15px;
 		</div>
 
 	</nav>
-<div>
+<div class="container">
 <h1>Welcome ${name}</h1>
 
 Your Todos are
@@ -49,7 +49,7 @@ Your Todos are
 </c:forEach>
 </ol>
 <p><font color="red">${errorMessage}</font></p>
-<form method="POST" action="/todo.do">
+<form method="POST" action="/add-todo.do">
 New Todo : <input name="todo" type="text" /> <input name="add" type="submit" />
 </form>
 </div>
