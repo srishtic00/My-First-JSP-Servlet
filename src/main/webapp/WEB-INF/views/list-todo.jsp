@@ -48,9 +48,9 @@ Your Todos are
 </c:forEach>
 </ol>
 <p><font color="red">${errorMessage}</font></p>
-<form method="POST" action="/add-todo.do">
-New Todo : <input name="todo" type="text" /> <input name="add" type="submit" />
-</form>
+		<a
+					href="/add-todo.do"><button>Add New Todo</button></a>
+	</div>
 </div>
 <footer class="footer">
 		<div class="container">
