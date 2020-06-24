@@ -63,11 +63,7 @@ padding: 0 15px;
 	<input type="submit" value="Login"/>
 	</form>
 </div>
-<footer class="footer">
-		<div class="container">
-			<p>footer content</p>
-		</div>
-	</footer>
+
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>

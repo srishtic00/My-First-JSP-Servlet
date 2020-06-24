@@ -22,15 +22,12 @@ public class AddTodoServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
-		String todo = request.getParameter("todo");
-		if ("".equals(todo)) {
-			request.setAttribute("errorMessage", "Enter a valid todo");
-		} else {
-			todoService.addTodo(todo);
-		}
+		String newTodo = request.getParameter("todo");
+		String category = request.getParameter("category");
+		todoService.addTodo(new Todo(newTodo, category));
+		response.sendRedirect("/list-todo.do");
 //		request.setAttribute("todos", todoService.retrieveTodos());
 //		request.getRequestDispatcher("/WEB-INF/views/todo.jsp").forward(request, response);
 		//On reloading the page all the content gets rerendered and the todo is again and again added to the list therefore we prefer to redirect to the servlet 
-		response.sendRedirect("/list-todo.do");
 	}
 }

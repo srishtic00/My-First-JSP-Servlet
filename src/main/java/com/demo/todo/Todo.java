@@ -2,10 +2,13 @@ package com.demo.todo;
 
 public class Todo {
 	private String name;
+	private String category;
+
 	
-	public Todo(String name) {
+	public Todo(String name,String category) {
 		super();
 		this.name=name;
+		this.setCategory(category);
 	}
 
 	public String getName() {
@@ -15,10 +18,16 @@ public class Todo {
 	public void setName(String name) {
 		this.name = name;
 	}
+	public String getCategory() {
+		return category;
+	}
 
+	public void setCategory(String category) {
+		this.category = category;
+	}
 	@Override
 	public String toString() {
-		return String.format("Todo [name=%s]", name);
+		return String.format("Todo [name=%s, category=%s]", name, category);
 	}
 	@Override
 	public int hashCode() {
@@ -44,5 +53,7 @@ public class Todo {
 			return false;
 		return true;
 	}
+
+	
 
 }

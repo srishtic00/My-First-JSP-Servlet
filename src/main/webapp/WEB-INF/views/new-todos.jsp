@@ -35,16 +35,17 @@
 	</nav>
 
 	<div class="container">
-		Your New Action Item:
+		<h3>Your New Action Item:</h3>
 		<form method="POST" action="/add-todo.do">
-			New Todo : <input name="todo" type="text" /> <input name="add"
+		<table class="table">
+			<tr><td>Description :</td><td> <input name="todo" type="text" /></td></tr> 
+			<tr><td>Category :</td><td> <input name="category" type="text" /></td></tr>
+		<table>
+			<input name="add"
 				type="submit" />
 		</form>
 	</div>
 
-	<footer class="footer">
-		<div>footer content</div>
-	</footer>
 
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
