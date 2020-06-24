@@ -19,17 +19,17 @@
 
 <body>
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-inverse">
 
 		<a href="/" class="navbar-brand">My Todo App</a>
 
 		<ul class="nav navbar-nav">
 			<li class="active"><a href="#">Home</a></li>
-			<li><a href="/list-todos.do">Todos</a></li>
+			<li><a href="/list-todo.do">Todos</a></li>
 		</ul>
 
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="/logout.do">Logout</a></li>
+			<li><a class="btn btn-primary" href="/logout.do">Logout</a></li>
 		</ul>
 
 	</nav>
@@ -41,7 +41,7 @@
 			<tr><td>Description :</td><td> <input name="todo" type="text" /></td></tr> 
 			<tr><td>Category :</td><td> <input name="category" type="text" /></td></tr>
 		<table>
-			<input name="add"
+			<input class="btn btn-success" name="add"
 				type="submit" />
 		</form>
 	</div>

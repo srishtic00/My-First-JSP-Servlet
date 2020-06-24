@@ -21,7 +21,7 @@ padding: 0 15px;
 </style>
 </head>
 <body>
-<nav role="navigation" class="navbar navbar-default">
+<nav role="navigation" class="navbar navbar-inverse">
 
 		<div class="">
 			<a href="/" class="navbar-brand">My Todo App</a>
@@ -30,10 +30,10 @@ padding: 0 15px;
 		<div class="navbar-collapse">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">Home</a></li>
-				<li><a href="/todo.do">Todos</a></li>
+				<li><a href="/list-todo.do">Todos</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="/login.do">Login</a></li>
+				<li><a class="btn btn-primary" href="/login.do">Login</a></li>
 			</ul>
 		</div>
 
@@ -50,6 +50,7 @@ padding: 0 15px;
 		<input name="name" type="text" />
 	</td>
 	</tr>
+	<br>
 	<tr>
 	<td>
 		 Password :
@@ -60,7 +61,7 @@ padding: 0 15px;
 	</tr>
 	
 	</table>
-	<input type="submit" value="Login"/>
+	<input class="btn btn-primary" type="submit" value="Login"/>
 	</form>
 </div>
 

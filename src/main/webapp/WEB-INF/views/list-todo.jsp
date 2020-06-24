@@ -21,7 +21,7 @@ padding: 0 15px;
 </style>
 </head>
 <body>
-<nav role="navigation" class="navbar navbar-default">
+<nav role="navigation" class="navbar navbar-inverse">
 
 		<div class="">
 			<a href="/" class="navbar-brand">My Todo App</a>
@@ -30,10 +30,10 @@ padding: 0 15px;
 		<div class="navbar-collapse">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">Home</a></li>
-				<li><a href="/todo.do">Todos</a></li>
+				<li><a href="/list-todo.do">Todos</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="/logout.do">Logout</a></li>
+				<li><a class="btn btn-primary" href="/logout.do">Logout</a></li>
 			</ul>
 		</div>
 
@@ -55,15 +55,15 @@ padding: 0 15px;
 			<tr>
 				<td>${todo.name}</td><td>${todo.category}</td>
 				<td>
-				<a
+				<a class="btn btn-danger"
 					href="/delete-todo.do?todo=${todo.name}&category=${todo.category}">Delete</a>
 				</td>
 				<tr>
 			</c:forEach>
 		</table>
 <p><font color="red">${errorMessage}</font></p>
-		<a
-					href="/add-todo.do"><button>Add New Todo</button></a>
+		<a class="btn btn-success"
+					href="/add-todo.do">Add New Todo</a>
 	</div>
 </div>
 
