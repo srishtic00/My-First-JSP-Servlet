@@ -24,14 +24,13 @@ padding: 0 15px;
 <nav role="navigation" class="navbar navbar-default">
 
 		<div class="">
-			<a href="/" class="navbar-brand">Brand</a>
+			<a href="/" class="navbar-brand">My Todo App</a>
 		</div>
 
 		<div class="navbar-collapse">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">Home</a></li>
 				<li><a href="/todo.do">Todos</a></li>
-				<li><a href="http://www.in28minutes.com">In28Minutes</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/logout.do">Logout</a></li>
