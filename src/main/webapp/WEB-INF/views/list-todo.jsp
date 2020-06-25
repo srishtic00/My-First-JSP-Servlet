@@ -1,43 +1,6 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<html>
-<head>
-<title>Yahoo!!</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
-	<style>
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #f5f5f5;
-}
+<%@ include file="../common/header.jspf"%>
+<%@ include file="../common/navigation.jspf"%>
 
-.footer .container {
-width: auto;
-max-width: 680px;
-padding: 0 15px;
-}
-</style>
-</head>
-<body>
-<nav role="navigation" class="navbar navbar-inverse">
-
-		<div class="">
-			<a href="/" class="navbar-brand">My Todo App</a>
-		</div>
-
-		<div class="navbar-collapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="/list-todo.do">Todos</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a class="btn btn-primary" href="/logout.do">Logout</a></li>
-			</ul>
-		</div>
-
-	</nav>
 <div class="container">
 <h1>Welcome ${name}</h1>
 

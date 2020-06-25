@@ -1,38 +1,5 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html>
-<html>
-<head>
-<title>Todos</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
-
-<style>
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #f5f5f5;
-}
-</style>
-</head>
-
-<body>
-
-	<nav class="navbar navbar-inverse">
-
-		<a href="/" class="navbar-brand">My Todo App</a>
-
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="/list-todo.do">Todos</a></li>
-		</ul>
-
-		<ul class="nav navbar-nav navbar-right">
-			<li><a class="btn btn-primary" href="/logout.do">Logout</a></li>
-		</ul>
-
-	</nav>
+<%@ include file="../common/header.jspf"%>
+<%@ include file="../common/navigation.jspf"%>
 
 	<div class="container">
 		<h3>Your New Action Item:</h3>
